@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprovante de Matrícula</title>
+    <style>
+        /* Resetando margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #808080;  /* Fundo cinza médio */
+            color: #000;  /* Fonte preta */
+            padding: 20px;
+        }
+
+        /* Container principal */
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;  /* Cor de fundo branca para o conteúdo */
+        }
+
+        /* Estilo para o header (imagem no topo) */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilo da faixa com a mensagem de matrícula */
+        .matricula-banner {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .matricula-banner p {
+            margin: 5px 0;
+        }
+
+        .sub-text {
+            font-size: 0.8em;
+            font-style: italic;
+        }
+
+        /* Estilo para as informações da aluna */
+        .info-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilo para a foto 3x4 */
+        .foto {
+            flex: 1;
+            text-align: center;
+        }
+
+        .foto img {
+            width: 80px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Estilo para os dados à direita */
+        .dados {
+            flex: 2;
+            text-align: left;
+        }
+
+        .dados p {
+            margin: 5px 0;
+        }
+
+        .dados strong {
+            font-size: 1.1em;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 600px) {
+            .info-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .foto img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Imagem no topo -->
+        <header>
+            <!-- Substitua o caminho da imagem aqui -->
+            <img src="https://github.com/matricula-system/ufpe/blob/main/company_logo.png?raw=true">
+        </header>
+
+        <!-- Faixa de Matrícula -->
+        <div class="matricula-banner">
+            <p><strong>A aluna encontra-se devidamente matriculada na Instituição</strong></p>
+            <p class="sub-text"><em>Este é um comprovante digital de matrícula.</em></p>
+        </div>
+
+        <!-- Informações com Foto -->
+        <div class="info-container">
+            <div class="foto">
+                <img src="https://github.com/matricula-system/ufpe/blob/main/125.jpg?raw=true">
+            </div>
+            <div class="dados">
+                <p><strong>Arianne Pontello Marinho Monte</strong></p>
+                <p>Matrícula: 4582-7</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
